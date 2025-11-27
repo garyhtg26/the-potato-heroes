@@ -1,10 +1,7 @@
-/* ====== TOKO WARNA & GLOBAL VARS ====== */
-
 :root {
     --potato-bg: #f7e0c4;
-    --potato-brown: #7b3a26; /* sesuaikan kalau mau persis warna logo */
+    --potato-brown: #7b3a26;
   
-    /* lebar shared antara logo & loader bar */
     --loader-width: min(420px, 60vw);
   }
   
@@ -26,7 +23,6 @@
     min-height: 100vh;
   }
   
-  /* sebelum loaded, hanya hero-screen yang disembunyikan */
   body:not(.is-loaded) #hero-screen {
     opacity: 0;
     pointer-events: none;
@@ -63,7 +59,6 @@
     mix-blend-mode: multiply;
   }
   
-  /* WRAPPER LOGO (hanya untuk kontrol lebar & overflow) */
   .loader__logo-wrap {
     position: relative;
     z-index: 1;
@@ -72,7 +67,6 @@
     overflow: hidden;
   }
   
-  /* LOGO: simple fade + naik dikit, tanpa overlay kotak */
   .loader__logo {
     display: block;
     width: 100%;
@@ -108,7 +102,7 @@
     width: var(--loader-width);
     height: 4px;
     border-radius: 999px;
-    background-color: rgba(123, 58, 38, 0.18); /* cokelat muda transparan */
+    background-color: rgba(123, 58, 38, 0.18); 
     overflow: hidden;
   }
   
@@ -118,8 +112,6 @@
     border-radius: inherit;
     background-color: var(--potato-brown);
     transform-origin: left center;
-  
-    /* durasi 3.5s, sama dengan LOADER_DURATION di JS */
     animation: loader-bar-fill 3.5s ease-out forwards;
   }
   

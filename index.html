@@ -20,7 +20,7 @@ title: Home
   </div>
 </div>
 
-<!-- HERO SCREEN: 3 KARTU BESAR -->
+<!-- HERO SCREEN: 3 Card -->
 <section
   id="hero-screen"
   class="min-h-screen bg-[#f7e0c4] flex items-center"
@@ -164,7 +164,9 @@ title: Home
       data-brand-panel="peeler"
       class="hidden h-full grid grid-cols-1 md:grid-cols-[minmax(0,1.05fr)_minmax(0,1.7fr)]"
     >
-      <div class="bg-[#7b483f] flex flex-col justify-center px-8 md:px-16 lg:px-24 py-10 text-[#fbe6d4]">
+    {% assign bg_potato = '/assets/images/background-potato.png' | relative_url %}
+      <div class="bg-contain flex flex-col justify-center px-8 md:px-16 lg:px-24 py-10 text-[#fbe6d4]"
+      style="background-image: url('{{ bg_potato }}');">
         <div class="max-w-md space-y-5">
           <img
             src="{{ '/assets/images/proud-potato-peeler.svg' | relative_url }}"
@@ -211,7 +213,6 @@ title: Home
 data-brand-panel="potion"
 class="hidden h-screen grid grid-cols-1 md:grid-cols-[minmax(0,1.05fr)_minmax(0,1.7fr)]"
 >
-<!-- Kolom kiri: teks -->
 <div
   class="bg-[#124678] flex flex-col justify-center px-8 md:px-16 lg:px-24 py-10 text-[#f3f7ff]"
 >
@@ -245,7 +246,6 @@ class="hidden h-screen grid grid-cols-1 md:grid-cols-[minmax(0,1.05fr)_minmax(0,
   </div>
 </div>
 
-<!-- Kolom kanan: gambar portrait di-clip -->
 <div class="h-full w-full overflow-hidden">
   <img
     src="{{ '/assets/images/proud-perfect-potion.jpg' | relative_url }}"

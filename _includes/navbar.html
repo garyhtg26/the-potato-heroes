@@ -1,0 +1,135 @@
+  <!-- TOP NAV -->
+  <header class="absolute top-0 left-0 right-0 z-10 bg-[#FBF9ED]">
+    <div class="mx-auto px-4 px-4 sm:px-6 lg:px-10 xl:px-14 py-4 flex items-center justify-between">
+      {% if page.url contains 'alani' %}
+        <img src="{{ '/assets/images/alani.svg' | relative_url }}" alt="Alani" class="h-8" />
+      {% elsif page.url contains 'proud-potato-peeler' %}
+        <img src="{{ '/assets/images/logo-proud-potato.svg' | relative_url }}" alt="Proud Potato" class="h-8" />
+      {% else %}
+        <img src="{{ '/assets/images/alani.svg' | relative_url }}" alt="Alani" class="h-8" />
+      {% endif %}
+      <button id="menu-toggle" class="flex flex-col gap-1.5">
+        <span class="block h-[2px] w-6 rounded-full bg-[#b9846a]"></span>
+        <span class="block h-[2px] w-5 rounded-full bg-[#b9846a]"></span>
+        <span class="block h-[2px] w-4 rounded-full bg-[#b9846a]"></span>
+      </button>
+    </div>
+    
+    <!-- Drawer Menu -->
+<div id="mobile-menu" class="fixed inset-0 z-[9999] hidden">
+    <!-- backdrop -->
+    <div id="menu-backdrop" class="absolute inset-0 bg-black/40"></div>
+  
+    <!-- panel drawer -->
+    <div
+      id="mobile-menu-panel"
+      class="ml-auto h-full w-full max-w-md bg-[#f5e6d3]
+             transform translate-x-full transition-transform duration-300
+             shadow-xl overflow-y-auto"
+    >
+      <div class="px-8 py-8">
+        <div class="flex justify-end mb-8">
+          <button id="menu-close" class="text-gray-800 hover:text-[#b9846a]">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+  
+        <!-- SEMUA KONTEN MENU-MU YANG LAMA TARUH DI SINI -->
+        <div class="mb-8">
+          {% if page.url contains 'alani' %}
+            <h2 class="text-2xl font-bold text-gray-800 mb-1">Alani</h2>
+          {% elsif page.url contains 'proud-potato-peeler' %}
+            <h2 class="text-2xl font-bold text-gray-800 mb-1">Proud Potato Peeler</h2>
+          {% else %}
+            <h2 class="text-2xl font-bold text-gray-800 mb-1">Menu</h2>
+          {% endif %}
+        </div>
+  
+        <nav class="space-y-4 mb-8">
+          <a href="#about" class="block text-base text-gray-800 hover:text-[#b9846a]">About</a>
+          <a href="#faqs" class="block text-base text-gray-800 hover:text-[#b9846a]">FAQs</a>
+          <a href="#bakery" class="block text-base text-gray-800 hover:text-[#b9846a]">Bakery</a>
+          <a href="#menu" class="block text-base text-gray-800 hover:text-[#b9846a]">Menu</a>
+          <a href="#reviews" class="block text-base text-gray-800 hover:text-[#b9846a]">Reviews</a>
+          <a href="#instagram" class="block text-base text-gray-800 hover:text-[#b9846a]">Instagram</a>
+        </nav>
+  
+        <div class="space-y-3 mb-12">
+          <button class="block border-2 border-[#BA3914] text-gray-800 py-3 px-6 rounded-xl font-semibold hover:bg-[#BA3914] hover:text-white transition-all">Order Online</button>
+          <button class="block border-2 border-[#496BBB] text-gray-800 py-3 px-6 rounded-xl font-semibold hover:bg-[#496BBB] hover:text-white transition-all">Make Reservation</button>
+        </div>
+  
+        {% if page.url contains 'alani' %}
+        <div class="space-y-4 mb-12">
+          <a href="proud-potato-peeler.html" class="flex items-center justify-between text-gray-800 text-xl font-bold hover:text-[#b9846a]">
+            <span>Proud Potato Peeler</span>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <a href="proud-perfect-potions.html" class="flex items-center justify-between text-gray-800 text-xl font-bold hover:text-[#b9846a]">
+            <span>Proud Perfect Potions</span>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        {% elsif page.url contains 'proud-potato-peeler' %}
+        <div class="space-y-4 mb-12">
+          <a href="alani.html" class="flex items-center justify-between text-gray-800 text-xl font-bold hover:text-[#b9846a]">
+            <span>Alani</span>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <a href="proud-perfect-potions.html" class="flex items-center justify-between text-gray-800 text-xl font-bold hover:text-[#b9846a]">
+            <span>Proud Perfect Potions</span>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        {% endif %}
+  
+        <div class="flex justify-around">
+          <a href="career.html" class="text-gray-800 text-xl font-bold hover:text-[#b9846a]">Career</a>
+          <a href="contact.html" class="text-gray-800 text-xl font-bold hover:text-[#b9846a]">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  </header>
+  
+  <script>
+    const menuToggle   = document.getElementById('menu-toggle');
+    const menuClose    = document.getElementById('menu-close');
+    const menu         = document.getElementById('mobile-menu');
+    const menuPanel    = document.getElementById('mobile-menu-panel');
+    const menuBackdrop = document.getElementById('menu-backdrop');
+  
+    function openMenu() {
+      menu.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      // slide in dari kanan
+      requestAnimationFrame(() => {
+        menuPanel.classList.remove('translate-x-full');
+      });
+    }
+  
+    function closeMenu() {
+      menuPanel.classList.add('translate-x-full');
+      document.body.style.overflow = '';
+      setTimeout(() => {
+        menu.classList.add('hidden');
+      }, 300); // sama dengan duration-300
+    }
+  
+    menuToggle.addEventListener('click', openMenu);
+    menuClose.addEventListener('click', closeMenu);
+    menuBackdrop.addEventListener('click', closeMenu);
+  </script>
+  

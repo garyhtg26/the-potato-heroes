@@ -1,10 +1,10 @@
 <!-- GALLERY SECTION -->
-<section id="gallery" class="relative pt-32 pb-14" style="background-color: #4D6AB4;">
+<section id="gallery" class="relative pt-32 pb-14" style="background-color: #F0C241;">
     <div class="mx-auto px-4 lg:px-0 space-y-6">
       <!-- ROW 1 SLIDER -->
-      <div class="relative" id="gallery-row3">
+      <div class="relative" id="gallery-row5">
         <div class="overflow-hidden rounded-2xl">
-          <div id="gallery-row3-track" class="flex transition-transform duration-500 ease-out will-change-transform">
+          <div id="gallery-row5-track" class="flex transition-transform duration-500 ease-out will-change-transform">
             <!-- SLIDE 1 ROW 1 -->
             <div class="min-w-full grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
               <img src="assets/images/2KY_2172.jpg" alt="Counter" class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer" data-lightbox="gallery" loading="lazy">
@@ -24,13 +24,13 @@
         </div>
   
         <!-- ARROW ROW 1 -->
-        <button id="gallery-row3-prev" aria-label="Previous row 1" class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
+        <button id="gallery-row5-prev" aria-label="Previous row 1" class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
           <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
   
-        <button id="gallery-row3-next" aria-label="Next row 1" class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
+        <button id="gallery-row5-next" aria-label="Next row 1" class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
           <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -38,9 +38,9 @@
       </div>
   
       <!-- ROW 2 SLIDER -->
-      <div class="relative" id="gallery-row4">
+      <div class="relative" id="gallery-row6">
         <div class="overflow-hidden rounded-2xl">
-          <div id="gallery-row4-track" class="flex transition-transform duration-500 ease-out will-change-transform">
+          <div id="gallery-row6-track" class="flex transition-transform duration-500 ease-out will-change-transform">
             <!-- SLIDE 1 ROW 2 -->
             <div class="min-w-full grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
               <img src="assets/images/2KY_1831.jpg" alt="Counter" class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer" data-lightbox="gallery" loading="lazy">
@@ -60,13 +60,13 @@
         </div>
   
         <!-- ARROW ROW 2 -->
-        <button id="gallery-row4-prev" aria-label="Previous row 2" class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
+        <button id="gallery-row6-prev" aria-label="Previous row 2" class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
           <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
   
-        <button id="gallery-row4-next" aria-label="Next row 2" class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
+        <button id="gallery-row6-next" aria-label="Next row 2" class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
           <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -154,8 +154,8 @@
       }
   
       // Initialize sliders
-      setupRowSlider('gallery-row3-track', 'gallery-row3-prev', 'gallery-row3-next', 5000);
-      setupRowSlider('gallery-row4-track', 'gallery-row4-prev', 'gallery-row4-next', 6000);
+      setupRowSlider('gallery-row5-track', 'gallery-row5-prev', 'gallery-row5-next', 5000);
+      setupRowSlider('gallery-row6-track', 'gallery-row6-prev', 'gallery-row6-next', 6000);
   
       // Optimized Lightbox
       const lightbox = document.getElementById('lightbox');

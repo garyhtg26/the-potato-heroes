@@ -1,4 +1,72 @@
-  <!-- EAT BREATHE SLEEP FOOD BANNER -->
-  <section>
-    <img src="assets/images/banner.png" alt="EAT. BREATHE. SLEEP. FOOD" class="w-full h-auto" />
-  </section>
+<!-- BANNER TEXT VERSION -->
+<section class="banner-wrap">
+  <div class="banner-inner">
+    <!-- grup 1 -->
+    <div class="banner-group">
+      <span>EAT, BREATHE, SLEEP FOOD</span>
+      <span>EAT, BREATHE, SLEEP FOOD</span>
+      <span>EAT, BREATHE, SLEEP FOOD</span>
+    </div>
+
+    <!-- grup 2 (duplikat untuk efek loop) -->
+    <div class="banner-group" aria-hidden="true">
+      <span>EAT, BREATHE, SLEEP FOOD</span>
+      <span>EAT, BREATHE, SLEEP FOOD</span>
+      <span>EAT, BREATHE, SLEEP FOOD</span>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* FONT – masih Cormorant Garamond, tapi di-tweak */
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap');
+
+  .banner-wrap {
+    background-color: #A9735B;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;        /* tanpa padding */
+    line-height: 1;
+  }
+
+  .banner-inner {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: marquee 25s linear infinite;
+    animation-direction: reverse; /* ke kanan */
+  }
+
+  .banner-group {
+    display: inline-flex;
+  }
+
+  .banner-group span {
+    font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 3.6rem;       
+    letter-spacing: 0.32em;
+    color: #A2A6D3;
+    padding: 0;      
+    line-height: 1;          
+    transform: scaleX(1);  
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .banner-group span {
+      font-size: 2rem;
+      letter-spacing: 0.18em;
+      padding: 0 1.5rem;
+    }
+  }
+</style>
+

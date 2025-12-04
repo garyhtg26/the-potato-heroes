@@ -1,78 +1,253 @@
-<section class="relative">
-    <div class="container mx-auto px-4 py-20">
-      <!-- Header -->
-      <h2 class="text-5xl font-bold text-center mb-16">What Our Guests Say</h2>
-  
-      <!-- Testimonials Grid -->
-      <div class="grid grid-cols-4 gap-6">
-        <!-- Testimonial 1 - Yellow -->
-        <div class="border-4 border-[#E8B44C] rounded-3xl p-6 bg-white">
-          <p class="text-xs mb-4">"Everything feels so personal here — from the food to the service. You can truly taste the love and creativity in every bite."</p>
-          <p class="text-xs text-right">- John</p>
-        </div>
-  
-        <!-- Testimonial 2 - Green -->
-        <div class="border-4 border-[#8B9D6F] rounded-3xl p-6 bg-white">
-          <p class="text-xs mb-4">"Such a beautiful space! Cozy and welcoming, and full of flavor. You can tell the team genuinely loves what they do."</p>
-          <p class="text-xs text-right">- John</p>
-        </div>
-  
-        <!-- Testimonial 3 - Red -->
-        <div class="border-4 border-[#B8432E] rounded-3xl p-6 bg-white">
-          <p class="text-xs mb-4">"From the moment we walked in, we felt like family. The atmosphere, the music, the food — it all just works together perfectly."</p>
-          <p class="text-xs text-right">- John</p>
-        </div>
-  
-        <!-- Testimonial 4 - Blue -->
-        <div class="border-4 border-[#5B7DBF] rounded-3xl p-6 bg-white">
-          <p class="text-xs mb-4">"Everything feels so personal here — from the food to the service. You can truly taste the love and creativity in every bite."</p>
-          <p class="text-xs text-right">- John</p>
+<!-- WHAT OUR GUESTS SAY SECTION -->
+<section id="reviews" class="py-16 md:py-20">
+  <div class="mx-auto max-w-6xl px-4 lg:px-0">
+    <div
+      class="mb-12 text-center"
+      style="font-family: Montserrat;"
+      data-aos="fade-up"
+      data-aos-delay="50"
+    >
+      <h2
+        class="mb-4 text-4xl font-bold text-gray-900 md:text-5xl"
+        style="font-family: Montserrat;"
+      >
+        What Our Guests Say
+      </h2>
+      <p class="text-lg text-gray-600" style="font-family: Montserrat;">
+        Real experiences from real people
+      </p>
+    </div>
+
+    <!-- Testimonials Carousel -->
+    <div class="relative mb-16" data-aos="fade-up" data-aos-delay="100">
+      <div class="overflow-hidden">
+        <div
+          id="testimonialCarousel"
+          class="flex gap-4 transition-transform duration-500 ease-in-out md:gap-6"
+        >
+          <!-- Testimonial 1 -->
+          <div
+            class="min-w-full p-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:min-w-[calc(33.333%-16px)]"
+            style="border: 8px solid #F1C043; border-radius: 16px;"
+          >
+            <div class="mb-4 flex">
+              <span class="text-2xl text-yellow-500">★</span>
+              <span class="text-2xl text-yellow-500">★</span>
+              <span class="text-2xl text-yellow-500">★</span>
+              <span class="text-2xl text-yellow-500">★</span>
+              <span class="text-2xl text-yellow-500">★</span>
+            </div>
+            <p class="mb-6 leading-relaxed text-gray-700">
+              "Such a beautiful experience! Cozy, welcoming, and full of
+              flavor. You can tell the team genuinely loves what they do."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#b9846a] font-bold text-white"
+              >
+                J
+              </div>
+              <div>
+                <p class="font-semibold text-gray-900">John</p>
+                <p class="text-xs text-gray-500">Verified Guest</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="min-w-full p-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:min-w-[calc(33.333%-16px)]"
+            style="border: 8px solid #7B7D35; border-radius: 16px;"
+          >
+            <div class="mb-4 flex">
+              <span class="text-2xl text-yellow-500">★</span>
+              <span class="text-2xl text-yellow-500">★</span>
+              <span class="text-2xl text-yellow-500">★</span>
+              <span class="text-2xl text-yellow-500">★</span>
+              <span class="text-2xl text-yellow-500">★</span>
+            </div>
+            <p class="mb-6 leading-relaxed text-gray-700">
+              "From the moment we walked in, we felt like family. The
+              atmosphere, the music, the food — it all just works together
+              perfectly."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#b9846a] font-bold text-white"
+              >
+                S
+              </div>
+              <div>
+                <p class="font-semibold text-gray-900">Sarah</p>
+                <p class="text-xs text-gray-500">Verified Guest</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div
+            class="min-w-full p-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:min-w-[calc(33.333%-16px)]"
+            style="border: 8px solid #BA3914; border-radius: 16px;"
+          >
+            <div class="mb-4 flex">
+              <span class="text-2xl text-yellow-500">★</span>
+              <span class="text-2xl text-yellow-500">★</span>
+              <span class="text-2xl text-yellow-500">★</span>
+              <span class="text-2xl text-yellow-500">★</span>
+              <span class="text-2xl text-yellow-500">★</span>
+            </div>
+            <p class="mb-6 leading-relaxed text-gray-700">
+              "Everything feels so personal here — from the food to the
+              service. You can truly taste the love and creativity in every
+              bite."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#b9846a] font-bold text-white"
+              >
+                M
+              </div>
+              <div>
+                <p class="font-semibold text-gray-900">Michael</p>
+                <p class="text-xs text-gray-500">Verified Guest</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div
+            class="min-w-full p-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:min-w-[calc(33.333%-16px)]"
+            style="border: 8px solid #496BBB; border-radius: 16px;"
+          >
+            <div class="mb-4 flex">
+              <span class="text-2xl text-yellow-500">★</span>
+              <span class="text-2xl text-yellow-500">★</span>
+              <span class="text-2xl text-yellow-500">★</span>
+              <span class="text-2xl text-yellow-500">★</span>
+              <span class="text-2xl text-yellow-500">★</span>
+            </div>
+            <p class="mb-6 leading-relaxed text-gray-700">
+              "Best dining experience in town! The attention to detail and
+              quality of ingredients really sets this place apart from the
+              rest."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#b9846a] font-bold text-white"
+              >
+                E
+              </div>
+              <div>
+                <p class="font-semibold text-gray-900">Emma</p>
+                <p class="text-xs text-gray-500">Verified Guest</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  
-    <!-- Wave Image at Top - Overlapping -->
-    <div class="w-full relative z-10 leading-[0]">
-      <img src="{{ '/assets/images/yellow-shape-alani1.svg' | relative_url }}" alt="" class="w-full block">
-    </div>
-  
-    <!-- Gallery Section -->
-    <div class="bg-[#F0C241] py-12 relative z-0">
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-4 gap-4">
-          <!-- Row 1 -->
-          <div class="aspect-[4/3] overflow-hidden rounded-2xl border-4 border-white">
-            <img src="{{ '/assets/images/2KY_1729.jpg' | relative_url }}" alt="Gallery 1" class="w-full h-full object-cover">
-          </div>
-          <div class="aspect-[4/3] overflow-hidden rounded-2xl border-4 border-white">
-            <img src="{{ '/assets/images/proud-perfect-potion.jpg' | relative_url }}" alt="Gallery 2" class="w-full h-full object-cover">
-          </div>
-          <div class="aspect-[4/3] overflow-hidden rounded-2xl border-4 border-white">
-            <img src="{{ '/assets/images/2KY_1831.jpg' | relative_url }}" alt="Gallery 3" class="w-full h-full object-cover">
-          </div>
-          <div class="aspect-[4/3] overflow-hidden rounded-2xl border-4 border-white">
-            <img src="{{ '/assets/images/blue-bar3.jpg' | relative_url }}" alt="Gallery 4" class="w-full h-full object-cover">
-          </div>
-          
-          <!-- Row 2 -->
-          <div class="aspect-[4/3] overflow-hidden rounded-2xl border-4 border-white">
-            <img src="{{ '/assets/images/proud-perfect-potion.jpg' | relative_url }}" alt="Gallery 5" class="w-full h-full object-cover">
-          </div>
-          <div class="aspect-[4/3] overflow-hidden rounded-2xl border-4 border-white">
-            <img src="{{ '/assets/images/2KY_1874.jpg' | relative_url }}" alt="Gallery 6" class="w-full h-full object-cover">
-          </div>
-          <div class="aspect-[4/3] overflow-hidden rounded-2xl border-4 border-white">
-            <img src="{{ '/assets/images/proud-perfect-potion.jpg' | relative_url }}" alt="Gallery 7" class="w-full h-full object-cover">
-          </div>
-          <div class="aspect-[4/3] overflow-hidden rounded-2xl border-4 border-white">
-            <img src="{{ '/assets/images/blue-bar3.jpg' | relative_url }}" alt="Gallery 8" class="w-full h-full object-cover">
-          </div>
-        </div>
+
+      <!-- Dots and Navigation -->
+      <div
+        class="mt-6 flex items-center justify-center gap-4"
+        data-aos="fade-up"
+        data-aos-delay="130"
+      >
+        <button
+          onclick="prevTestimonial()"
+          class="flex h-10 w-10 items-center justify-center rounded-full bg-[#b9846a] text-white shadow-lg transition-all duration-300 hover:scale-110 hover:bg-[#a67559]"
+        >
+          <span class="text-2xl font-light">‹</span>
+        </button>
+        <div id="dotsContainer" class="flex gap-2"></div>
+        <button
+          onclick="nextTestimonial()"
+          class="flex h-10 w-10 items-center justify-center rounded-full bg-[#b9846a] text-white shadow-lg transition-all duration-300 hover:scale-110 hover:bg-[#a67559]"
+        >
+          <span class="text-2xl font-light">›</span>
+        </button>
       </div>
     </div>
-  
-    <!-- Wave Image at Bottom - Overlapping -->
-    <div class="w-full relative z-10 leading-[0]">
-      <img src="{{ '/assets/images/yellow-shape-alani2.svg' | relative_url }}" alt="" class="w-full block">
-    </div>
-  </section>
+  </div>
+</section>
+
+<img
+  src="{{ '/assets/images/yellow-shape-alani1.svg' | relative_url }}"
+  alt="Blue Shape"
+  class="w-screen h-auto block"
+  style="display: block; margin: 0; padding: 0;"
+/>
+
+<script>
+  // Semua script asli tetap sama
+  let currentIndex = 0;
+  const carousel = document.getElementById("testimonialCarousel");
+  const dotsContainer = document.getElementById("dotsContainer");
+  const items = carousel.children.length;
+  let itemsPerView = window.innerWidth < 768 ? 1 : 3;
+  const maxIndex = items - itemsPerView;
+
+  function createDots() {
+    dotsContainer.innerHTML = "";
+    for (let i = 0; i <= maxIndex; i++) {
+      const dot = document.createElement("button");
+      dot.className =
+        "h-2 w-2 rounded-full bg-gray-300 transition-all duration-300 hover:bg-gray-400 " +
+        (i === currentIndex ? "w-8 bg-[#b9846a]" : "");
+      dot.onclick = () => goToSlide(i);
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function updateCarousel() {
+    const offset = currentIndex * (100 / itemsPerView);
+    carousel.style.transform = "translateX(-" + offset + "%)";
+    updateDots();
+  }
+
+  function updateDots() {
+    const dots = dotsContainer.children;
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].className =
+        i === currentIndex
+          ? "h-2 w-8 rounded-full bg-[#b9846a] transition-all duration-300"
+          : "h-2 w-2 rounded-full bg-gray-300 transition-all duration-300 hover:bg-gray-400";
+    }
+  }
+
+  function goToSlide(index) {
+    currentIndex = index;
+    updateCarousel();
+  }
+
+  function nextTestimonial() {
+    currentIndex = currentIndex < maxIndex ? currentIndex + 1 : 0;
+    updateCarousel();
+  }
+
+  function prevTestimonial() {
+    currentIndex = currentIndex > 0 ? currentIndex - 1 : maxIndex;
+    updateCarousel();
+  }
+
+  let autoplayInterval = setInterval(nextTestimonial, 5000);
+
+  carousel.parentElement.addEventListener("mouseenter", () => {
+    clearInterval(autoplayInterval);
+  });
+
+  carousel.parentElement.addEventListener("mouseleave", () => {
+    autoplayInterval = setInterval(nextTestimonial, 5000);
+  });
+
+  window.addEventListener("resize", () => {
+    const newItemsPerView = window.innerWidth < 768 ? 1 : 3;
+    if (newItemsPerView !== itemsPerView) {
+      itemsPerView = newItemsPerView;
+      currentIndex = 0;
+      createDots();
+      updateCarousel();
+    }
+  });
+
+  createDots();
+</script>

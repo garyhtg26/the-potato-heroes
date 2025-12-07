@@ -1,5 +1,6 @@
 <!-- GALLERY SECTION -->
-<section id="gallery" class="relative pt-32 pb-14" style="background-color: #BC3B25;">
+<!-- GALLERY SECTION -->
+<section id="gallery" class="relative pt-12 pb-12" style="background-color: #BC3B25;">
   <div class="mx-auto px-4 lg:px-0 space-y-6">
     <!-- ROW 1 SLIDER -->
     <div class="relative" id="gallery-row1">
@@ -7,30 +8,57 @@
         <div id="gallery-row1-track" class="flex transition-transform duration-500 ease-out will-change-transform">
           <!-- SLIDE 1 ROW 1 -->
           <div class="min-w-full grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-            <img src="assets/images/2KY_2172.jpg" alt="Counter" class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer" data-lightbox="gallery" loading="lazy">
-            <img src="assets/images/2KY_2186.jpg" alt="Croissants" class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer" data-lightbox="gallery" loading="lazy">
-            <img src="assets/images/2KY_1941.jpg" alt="Display" class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer" data-lightbox="gallery" loading="lazy">
-            <img src="assets/images/2KY_2119.jpg" alt="Shelves" class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer" data-lightbox="gallery" loading="lazy">
+            <img src="assets/images/2KY_2172.jpg"
+                 alt="Counter"
+                 class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
+                 data-lightbox="gallery" loading="lazy">
+            <img src="assets/images/2KY_2186.jpg"
+                 alt="Croissants"
+                 class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
+                 data-lightbox="gallery" loading="lazy">
+            <!-- hidden on mobile, show only on md+ -->
+            <img src="assets/images/2KY_1941.jpg"
+                 alt="Display"
+                 class="hidden md:block aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
+                 data-lightbox="gallery" loading="lazy">
+            <img src="assets/images/2KY_2119.jpg"
+                 alt="Shelves"
+                 class="hidden md:block aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
+                 data-lightbox="gallery" loading="lazy">
           </div>
 
           <!-- SLIDE 2 ROW 1 -->
           <div class="min-w-full grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-            <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=800&q=80" alt="Variation 1" class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer" data-lightbox="gallery" loading="lazy">
-            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80" alt="Variation 2" class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer" data-lightbox="gallery" loading="lazy">
-            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80" alt="Variation 3" class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer" data-lightbox="gallery" loading="lazy">
-            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80" alt="Variation 4" class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer" data-lightbox="gallery" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=800&q=80"
+                 alt="Variation 1"
+                 class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
+                 data-lightbox="gallery" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80"
+                 alt="Variation 2"
+                 class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
+                 data-lightbox="gallery" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80"
+                 alt="Variation 3"
+                 class="hidden md:block aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
+                 data-lightbox="gallery" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80"
+                 alt="Variation 4"
+                 class="hidden md:block aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
+                 data-lightbox="gallery" loading="lazy">
           </div>
         </div>
       </div>
 
       <!-- ARROW ROW 1 -->
-      <button id="gallery-row1-prev" aria-label="Previous row 1" class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
+      <button id="gallery-row1-prev" aria-label="Previous row 1"
+              class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
         <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </button>
 
-      <button id="gallery-row1-next" aria-label="Next row 1" class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
+      <button id="gallery-row1-next" aria-label="Next row 1"
+              class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
         <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
@@ -43,30 +71,56 @@
         <div id="gallery-row2-track" class="flex transition-transform duration-500 ease-out will-change-transform">
           <!-- SLIDE 1 ROW 2 -->
           <div class="min-w-full grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-            <img src="assets/images/2KY_1831.jpg" alt="Counter" class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer" data-lightbox="gallery" loading="lazy">
-            <img src="assets/images/2KY_1874.jpg" alt="Croissants" class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer" data-lightbox="gallery" loading="lazy">
-            <img src="assets/images/2KY_2119.jpg" alt="Display" class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer" data-lightbox="gallery" loading="lazy">
-            <img src="assets/images/2KY_2126.jpg" alt="Shelves" class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer" data-lightbox="gallery" loading="lazy">
+            <img src="assets/images/2KY_1831.jpg"
+                 alt="Counter"
+                 class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
+                 data-lightbox="gallery" loading="lazy">
+            <img src="assets/images/2KY_1874.jpg"
+                 alt="Croissants"
+                 class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
+                 data-lightbox="gallery" loading="lazy">
+            <img src="assets/images/2KY_2119.jpg"
+                 alt="Display"
+                 class="hidden md:block aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
+                 data-lightbox="gallery" loading="lazy">
+            <img src="assets/images/2KY_2126.jpg"
+                 alt="Shelves"
+                 class="hidden md:block aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
+                 data-lightbox="gallery" loading="lazy">
           </div>
 
           <!-- SLIDE 2 ROW 2 -->
           <div class="min-w-full grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-            <img src="assets/images/2KY_2172.jpg" alt="Shelves alt" class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer" data-lightbox="gallery" loading="lazy">
-            <img src="assets/images/2KY_2186.jpg" alt="Counter alt" class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer" data-lightbox="gallery" loading="lazy">
-            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80" alt="Croissants alt" class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer" data-lightbox="gallery" loading="lazy">
-            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80" alt="Display alt" class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer" data-lightbox="gallery" loading="lazy">
+            <img src="assets/images/2KY_2172.jpg"
+                 alt="Shelves alt"
+                 class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
+                 data-lightbox="gallery" loading="lazy">
+            <img src="assets/images/2KY_2186.jpg"
+                 alt="Counter alt"
+                 class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
+                 data-lightbox="gallery" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80"
+                 alt="Croissants alt"
+                 class="hidden md:block aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
+                 data-lightbox="gallery" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80"
+                 alt="Display alt"
+                 class="hidden md:block aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
+                 data-lightbox="gallery" loading="lazy">
           </div>
         </div>
       </div>
 
       <!-- ARROW ROW 2 -->
-      <button id="gallery-row2-prev" aria-label="Previous row 2" class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
+      <button id="gallery-row2-prev" aria-label="Previous row 2"
+              class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
         <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </button>
 
-      <button id="gallery-row2-next" aria-label="Next row 2" class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
+      <button id="gallery-row2-next" aria-label="Next row 2"
+              class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
         <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
@@ -74,6 +128,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- LIGHTBOX POPUP -->
 <div id="lightbox" class="fixed inset-0 z-[9999] hidden items-center justify-center bg-black/70 px-4">

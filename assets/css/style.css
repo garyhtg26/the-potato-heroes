@@ -55,7 +55,7 @@ body.is-loaded #hero-screen {
   overflow: hidden;
 
   background-color: var(--potato-bg);
-  background-image: url("../images/background.jpg");
+  background-image: url("../images/background.webp");
   background-size: cover;
   background-position: center;
 }

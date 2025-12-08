@@ -18,14 +18,13 @@
 </section>
 
 <style>
-  /* FONT – masih Cormorant Garamond, tapi di-tweak */
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap');
 
   .banner-wrap {
     background-color: #A9735B;
     overflow: hidden;
     width: 100%;
-    padding: 0;        /* tanpa padding */
+    padding: 0;
     line-height: 1;
   }
 
@@ -44,12 +43,14 @@
     font-family: 'Cormorant Garamond', 'Times New Roman', serif;
     font-style: italic;
     text-transform: uppercase;
-    font-size: 3.6rem;       
+    font-size: 3.6rem;
     letter-spacing: 0.32em;
     color: #A2A6D3;
-    padding: 0;      
-    line-height: 1;          
-    transform: scaleX(1);  
+    line-height: 1;
+    transform: scaleX(1);
+
+    /* JARAK ANTAR PHRASE – ini yang bikin FOOD & EAT agak jauh */
+    padding: 0 3rem; /* kasih ruang kiri-kanan */
   }
 
   @keyframes marquee {
@@ -65,8 +66,7 @@
     .banner-group span {
       font-size: 2rem;
       letter-spacing: 0.18em;
-      padding: 0 1.5rem;
+      padding: 0 2rem; /* tetap ada jarak di mobile tapi sedikit lebih kecil */
     }
   }
 </style>
-

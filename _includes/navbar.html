@@ -2,12 +2,13 @@
 <header class="fixed top-0 left-0 right-0 z-50 bg-[#FBF9ED] shadow-md">
   <div class="mx-auto px-4 sm:px-6 lg:px-10 xl:px-14 py-4 flex items-center justify-between">
     {% if page.url contains 'alani' %}
-      <img src="{{ '/assets/images/alani.svg' | relative_url }}" alt="Alani" class="h-8" />
-    {% elsif page.url contains 'proud-potato-peeler' %}
-      <img src="{{ '/assets/images/logo-proud-potato.svg' | relative_url }}" alt="Proud Potato" class="h-8" />
-    {% else %}
-      <img src="{{ '/assets/images/alani.svg' | relative_url }}" alt="Alani" class="h-8" />
-    {% endif %}
+    <img src="{{ '/assets/images/alani.svg' | relative_url }}" alt="Alani" class="h-6 md:h-8" />
+  {% elsif page.url contains 'proud-potato-peeler' %}
+    <img src="{{ '/assets/images/logo-proud-potato.svg' | relative_url }}" alt="Proud Potato" class="h-6 md:h-8" />
+  {% else %}
+    <img src="{{ '/assets/images/logo-potato-heroes.svg' | relative_url }}" alt="Potato Heroes" class="h-6 md:h-8" />
+  {% endif %}
+  
 
     <button id="menu-toggle" class="flex flex-col gap-1.5">
       <span class="block h-[2px] w-6 rounded-full bg-[#b9846a]"></span>

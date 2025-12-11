@@ -404,3 +404,14 @@ body.is-loaded #hero-screen {
   .flip-card.is-flipped .flip-card-inner {
     transform: rotateY(180deg);
   }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .cursor-grab { cursor: grab; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .cursor-grabbing { cursor: grabbing !important; }

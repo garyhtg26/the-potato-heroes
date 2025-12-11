@@ -1,256 +1,186 @@
 <!-- GALLERY SECTION -->
-<section id="gallery3" class="relative py-14" style="background-image: url('assets/images/background.png'); background-size: cover; background-position: center;">
-  <div class="mx-auto px-4 lg:px-0 space-y-6">
-    <!-- ROW 1 SLIDER -->
-    <div class="relative" id="gallery-row5">
-      <div class="overflow-hidden rounded-2xl">
-        <div id="gallery-row5-track" class="flex transition-transform duration-500 ease-out will-change-transform">
-          <!-- SLIDE 1 ROW 1 -->
-          <div class="min-w-full grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-            <img src="assets/images/2KY_2172.jpg"
-                 alt="Counter"
-                 class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
-                 data-lightbox="gallery" loading="lazy">
-            <img src="assets/images/2KY_2186.jpg"
-                 alt="Croissants"
-                 class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
-                 data-lightbox="gallery" loading="lazy">
-            <!-- hidden on mobile, show only on md+ -->
-            <img src="assets/images/2KY_1941.jpg"
-                 alt="Display"
-                 class="hidden md:block aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
-                 data-lightbox="gallery" loading="lazy">
-            <img src="assets/images/2KY_2119.jpg"
-                 alt="Shelves"
-                 class="hidden md:block aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
-                 data-lightbox="gallery" loading="lazy">
-          </div>
-
-          <!-- SLIDE 2 ROW 1 -->
-          <div class="min-w-full grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-            <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=800&q=80"
-                 alt="Variation 1"
-                 class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
-                 data-lightbox="gallery" loading="lazy">
-            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80"
-                 alt="Variation 2"
-                 class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
-                 data-lightbox="gallery" loading="lazy">
-            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80"
-                 alt="Variation 3"
-                 class="hidden md:block aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
-                 data-lightbox="gallery" loading="lazy">
-            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80"
-                 alt="Variation 4"
-                 class="hidden md:block aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
-                 data-lightbox="gallery" loading="lazy">
-          </div>
-        </div>
-      </div>
-
-      <!-- ARROW ROW 1 -->
-      <button id="gallery-row5-prev" aria-label="Previous row 1"
-              class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
-        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
-
-      <button id="gallery-row5-next" aria-label="Next row 1"
-              class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
-        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
+<section id="gallery" class="relative py-12 md:py-20 overflow-hidden" style="background-image: url('assets/images/background.png'); background-size: cover; background-position: center;">
+  <div class="space-y-8 md:space-y-10">
+    <!-- ROW 1 -->
+    <div 
+      class="gallery-drag flex gap-4 overflow-x-auto hide-scrollbar !pl-0 px-4 md:px-8 cursor-grab active:cursor-grabbing w-full" data-aos="fade-right" data-aos-offset="200">
+      <!-- Image Items -->
+      <img src="assets/images/2KY_2172.jpg" alt="Gallery 1" 
+           class="h-48 md:h-64 w-[300px] md:w-[400px] object-cover rounded-2xl shrink-0 shadow-lg pointer-events-none select-none" 
+           data-lightbox-src="assets/images/2KY_2172.jpg">
+           
+      <img src="assets/images/2KY_2186.jpg" alt="Gallery 2" 
+           class="h-48 md:h-64 w-[300px] md:w-[400px] object-cover rounded-2xl shrink-0 shadow-lg pointer-events-none select-none" 
+           data-lightbox-src="assets/images/2KY_2186.jpg">
+           
+      <img src="assets/images/2KY_1941.jpg" alt="Gallery 3" 
+           class="h-48 md:h-64 w-[300px] md:w-[400px] object-cover rounded-2xl shrink-0 shadow-lg pointer-events-none select-none" 
+           data-lightbox-src="assets/images/2KY_1941.jpg">
+           
+      <img src="assets/images/2KY_2119.jpg" alt="Gallery 4" 
+           class="h-48 md:h-64 w-[300px] md:w-[400px] object-cover rounded-2xl shrink-0 shadow-lg pointer-events-none select-none" 
+           data-lightbox-src="assets/images/2KY_2119.jpg">
+           
+      <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=800&q=80" alt="Gallery 5" 
+           class="h-48 md:h-64 w-[300px] md:w-[400px] object-cover rounded-2xl shrink-0 shadow-lg pointer-events-none select-none" 
+           data-lightbox-src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=800&q=80">
+           
+      <!-- Spacer Kanan agar item terakhir tidak mepet layar -->
+      <div class="shrink-0 w-2 md:w-4"></div>
     </div>
 
-    <!-- ROW 2 SLIDER -->
-    <div class="relative" id="gallery-row6">
-      <div class="overflow-hidden rounded-2xl">
-        <div id="gallery-row6-track" class="flex transition-transform duration-500 ease-out will-change-transform">
-          <!-- SLIDE 1 ROW 2 -->
-          <div class="min-w-full grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-            <img src="assets/images/2KY_1831.jpg"
-                 alt="Counter"
-                 class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
-                 data-lightbox="gallery" loading="lazy">
-            <img src="assets/images/2KY_1874.jpg"
-                 alt="Croissants"
-                 class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
-                 data-lightbox="gallery" loading="lazy">
-            <img src="assets/images/2KY_2119.jpg"
-                 alt="Display"
-                 class="hidden md:block aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
-                 data-lightbox="gallery" loading="lazy">
-            <img src="assets/images/2KY_2126.jpg"
-                 alt="Shelves"
-                 class="hidden md:block aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
-                 data-lightbox="gallery" loading="lazy">
-          </div>
+    <!-- ROW 2 (Start position slightly offset or different images) -->
+    <div 
+      class="gallery-drag flex gap-4 overflow-x-auto hide-scrollbar !pl-0 px-4 md:px-8 cursor-grab active:cursor-grabbing w-full" data-aos="fade-left" data-aos-offset="200"
+    >
+      <img src="assets/images/2KY_1831.jpg" alt="Gallery 6" 
+           class="h-48 md:h-64 w-[300px] md:w-[400px] object-cover rounded-2xl shrink-0 shadow-lg pointer-events-none select-none" 
+           data-lightbox-src="assets/images/2KY_1831.jpg">
+           
+      <img src="assets/images/2KY_1874.jpg" alt="Gallery 7" 
+           class="h-48 md:h-64 w-[300px] md:w-[400px] object-cover rounded-2xl shrink-0 shadow-lg pointer-events-none select-none" 
+           data-lightbox-src="assets/images/2KY_1874.jpg">
+           
+      <img src="assets/images/2KY_2126.jpg" alt="Gallery 8" 
+           class="h-48 md:h-64 w-[300px] md:w-[400px] object-cover rounded-2xl shrink-0 shadow-lg pointer-events-none select-none" 
+           data-lightbox-src="assets/images/2KY_2126.jpg">
+           
+      <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80" alt="Gallery 9" 
+           class="h-48 md:h-64 w-[300px] md:w-[400px] object-cover rounded-2xl shrink-0 shadow-lg pointer-events-none select-none" 
+           data-lightbox-src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80">
+           
+      <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80" alt="Gallery 10" 
+           class="h-48 md:h-64 w-[300px] md:w-[400px] object-cover rounded-2xl shrink-0 shadow-lg pointer-events-none select-none" 
+           data-lightbox-src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80">
 
-          <!-- SLIDE 2 ROW 2 -->
-          <div class="min-w-full grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-            <img src="assets/images/2KY_2172.jpg"
-                 alt="Shelves alt"
-                 class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
-                 data-lightbox="gallery" loading="lazy">
-            <img src="assets/images/2KY_2186.jpg"
-                 alt="Counter alt"
-                 class="aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
-                 data-lightbox="gallery" loading="lazy">
-            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80"
-                 alt="Croissants alt"
-                 class="hidden md:block aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
-                 data-lightbox="gallery" loading="lazy">
-            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80"
-                 alt="Display alt"
-                 class="hidden md:block aspect-[4/3] w-full object-cover rounded-xl cursor-pointer"
-                 data-lightbox="gallery" loading="lazy">
-          </div>
-        </div>
-      </div>
-
-      <!-- ARROW ROW 2 -->
-      <button id="gallery-row6-prev" aria-label="Previous row 2"
-              class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
-        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
-
-      <button id="gallery-row6-next" aria-label="Next row 2"
-              class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all">
-        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
+      <div class="shrink-0 w-2 md:w-4"></div>
     </div>
+    
   </div>
 </section>
 
-
-<!-- LIGHTBOX POPUP -->
-<div id="lightbox" class="fixed inset-0 z-[9999] hidden items-center justify-center bg-black/70 px-4">
-  <div class="relative mx-auto flex w-full max-w-5xl items-center justify-center">
-    <button id="lightbox-close" class="absolute -top-10 right-0 text-white/80 hover:text-white text-3xl" aria-label="Close">×</button>
-    <img id="lightbox-image" src="" alt="" class="max-h-[80vh] max-w-full rounded-2xl shadow-2xl object-contain bg-black/20">
+<!-- LIGHTBOX POPUP (Tetap ada) -->
+<div id="lightbox" class="fixed inset-0 z-[9999] hidden items-center justify-center bg-black/80 px-4 backdrop-blur-sm transition-opacity duration-300">
+  <div class="relative max-w-6xl w-full flex justify-center">
+    <button id="lightbox-close" class="absolute -top-12 right-0 text-white hover:text-gray-300 text-4xl font-light">&times;</button>
+    <img id="lightbox-image" src="" alt="" class="max-h-[85vh] max-w-full rounded-lg shadow-2xl object-contain">
   </div>
 </div>
 
 <script>
-  (function() {
-    'use strict';
-    
-    // Optimized slider setup
-    function setupRowSlider(trackId, prevId, nextId, intervalMs) {
-      const track = document.getElementById(trackId);
-      const prevBtn = document.getElementById(prevId);
-      const nextBtn = document.getElementById(nextId);
+  document.addEventListener('DOMContentLoaded', () => {
+    /* ---------------------------------------------------
+       LOGIC 1: DRAG TO SCROLL (MOUSE)
+       --------------------------------------------------- */
+    const sliders = document.querySelectorAll('.gallery-drag');
+    let isDragging = false; 
 
-      if (!track || !prevBtn || !nextBtn) return;
+    sliders.forEach(slider => {
+      let isDown = false;
+      let startX;
+      let scrollLeft;
 
-      const slides = track.children.length;
-      let current = 0;
-      let timer = null;
-      let isTransitioning = false;
+      slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        isDragging = false; 
+        slider.classList.add('active');
+        slider.classList.add('cursor-grabbing');
+        slider.classList.remove('cursor-grab');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      });
 
-      function goToSlide(index) {
-        if (isTransitioning) return;
+      slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('cursor-grabbing');
+        slider.classList.add('cursor-grab');
+      });
+
+      slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('cursor-grabbing');
+        slider.classList.add('cursor-grab');
         
-        current = (index + slides) % slides;
-        isTransitioning = true;
+        setTimeout(() => { isDragging = false; }, 50); 
+      });
+
+      slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
         
-        // Use transform for better performance
-        track.style.transform = `translateX(-${current * 100}%)`;
-        
-        setTimeout(() => {
-          isTransitioning = false;
-        }, 500);
-      }
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2; 
 
-      function next() {
-        goToSlide(current + 1);
-      }
-
-      function prev() {
-        goToSlide(current - 1);
-      }
-
-      function startAuto() {
-        stopAuto();
-        timer = setInterval(next, intervalMs);
-      }
-
-      function stopAuto() {
-        if (timer) {
-          clearInterval(timer);
-          timer = null;
+        if (Math.abs(x - startX) > 5) {
+          isDragging = true;
         }
-      }
 
-      // Event listeners with passive option for better performance
-      nextBtn.addEventListener('click', () => {
-        next();
-        startAuto();
-      }, { passive: true });
+        slider.scrollLeft = scrollLeft - walk;
+      });
+      
+      const images = slider.querySelectorAll('img');
+      images.forEach(img => {
+        img.addEventListener('click', (e) => {
+           if (isDragging) {
+             e.preventDefault();
+             e.stopPropagation();
+             return;
+           }
+           // Buka lightbox jika murni klik
+           const src = img.getAttribute('data-lightbox-src');
+           if(src) openLightbox(src);
+        });
+      });
 
-      prevBtn.addEventListener('click', () => {
-        prev();
-        startAuto();
-      }, { passive: true });
+      slider.addEventListener('click', (e) => {
+        if (isDragging) return; 
+      });
+    });
 
-      const container = track.parentElement;
-      container.addEventListener('mouseenter', stopAuto, { passive: true });
-      container.addEventListener('mouseleave', startAuto, { passive: true });
+    const allImages = document.querySelectorAll('.gallery-drag img');
+    allImages.forEach(img => {
+      img.style.pointerEvents = 'auto'; 
+      img.addEventListener('dragstart', (e) => {
+        e.preventDefault(); 
+      });
+    });
 
-      goToSlide(0);
-      startAuto();
-    }
 
-    // Initialize sliders
-    setupRowSlider('gallery-row5-track', 'gallery-row5-prev', 'gallery-row5-next', 5000);
-    setupRowSlider('gallery-row6-track', 'gallery-row6-prev', 'gallery-row6-next', 6000);
-
-    // Optimized Lightbox
+    /* ---------------------------------------------------
+       LOGIC 2: LIGHTBOX
+       --------------------------------------------------- */
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-image');
     const lightboxClose = document.getElementById('lightbox-close');
 
-    if (!lightbox || !lightboxImg || !lightboxClose) return;
-
-    function openLightbox(src, alt) {
+    function openLightbox(src) {
+      if (!lightbox || !src) return;
       lightboxImg.src = src;
-      lightboxImg.alt = alt || '';
       lightbox.classList.remove('hidden');
       lightbox.classList.add('flex');
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden'; 
     }
 
     function closeLightbox() {
+      if (!lightbox) return;
       lightbox.classList.add('hidden');
       lightbox.classList.remove('flex');
       lightboxImg.src = '';
-      document.body.style.overflow = '';
+      document.body.style.overflow = ''; 
     }
 
-    // Delegate click events for better performance
-    document.addEventListener('click', (e) => {
-      const target = e.target;
-      
-      if (target.matches('[data-lightbox="gallery"]')) {
-        e.preventDefault();
-        openLightbox(target.src, target.alt);
-      }
-      
-      if (target === lightboxClose || target === lightbox) {
-        closeLightbox();
-      }
-    }, { passive: false });
+    if (lightboxClose) {
+      lightboxClose.addEventListener('click', closeLightbox);
+    }
+
+    if (lightbox) {
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+    }
 
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
-        closeLightbox();
-      }
+      if (e.key === 'Escape') closeLightbox();
     });
-  })();
+  });
 </script>

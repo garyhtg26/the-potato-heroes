@@ -171,10 +171,10 @@
 
     cards.forEach(function (card) {
       card.addEventListener("click", function () {
-        // Optional: Jika ingin kartu lain menutup otomatis saat satu dibuka
-        // cards.forEach(c => {
-        //   if (c !== card) c.classList.remove("is-flipped");
-        // });
+
+        cards.forEach(c => {
+          if (c !== card) c.classList.remove("is-flipped");
+        });
         
         card.classList.toggle("is-flipped");
       });

@@ -1,18 +1,15 @@
 <!-- BANNER TEXT VERSION -->
-<section class="banner-wrap">
+<section class="banner-wrap" data-aos="fade-up" data-aos-delay="100">
   <div class="banner-inner">
-    <!-- grup 1 -->
     <div class="banner-group">
-      <span>EAT, BREATHE, SLEEP FOOD</span>
-      <span>EAT, BREATHE, SLEEP FOOD</span>
-      <span>EAT, BREATHE, SLEEP FOOD</span>
+      <span>EAT BREATHE SLEEP FOOD</span>
+      <span>EAT BREATHE SLEEP FOOD</span>
+      <span>EAT BREATHE SLEEP FOOD</span>
     </div>
-
-    <!-- grup 2 (duplikat untuk efek loop) -->
     <div class="banner-group" aria-hidden="true">
-      <span>EAT, BREATHE, SLEEP FOOD</span>
-      <span>EAT, BREATHE, SLEEP FOOD</span>
-      <span>EAT, BREATHE, SLEEP FOOD</span>
+      <span>EAT BREATHE SLEEP FOOD</span>
+      <span>EAT BREATHE SLEEP FOOD</span>
+      <span>EAT BREATHE SLEEP FOOD</span>
     </div>
   </div>
 </section>
@@ -48,9 +45,15 @@
     color: #A2A6D3;
     line-height: 1;
     transform: scaleX(1);
+    
+    /* PERUBAHAN 1: Hapus padding samping agar tidak ada gap besar */
+    padding: 0; 
+  }
 
-    /* JARAK ANTAR PHRASE – ini yang bikin FOOD & EAT agak jauh */
-    padding: 0 3rem; /* kasih ruang kiri-kanan */
+  /* PERUBAHAN 2: Tambahkan satu spasi 'fisik' setelah setiap span */
+  .banner-group span::after {
+    content: "\00a0"; /* Ini adalah kode unicode untuk spasi (non-breaking space) */
+    /* Karena berada di dalam span, ia otomatis mewarisi letter-spacing dan font-size yang sama */
   }
 
   @keyframes marquee {
@@ -66,7 +69,7 @@
     .banner-group span {
       font-size: 2rem;
       letter-spacing: 0.18em;
-      padding: 0 2rem; /* tetap ada jarak di mobile tapi sedikit lebih kecil */
+      /* Padding juga dihapus di mobile via inheritance di atas, tidak perlu di-set ulang */
     }
   }
 </style>

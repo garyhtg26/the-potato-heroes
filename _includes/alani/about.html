@@ -1,16 +1,17 @@
 <!-- ABOUT SECTION -->
 <section
   id="about"
-  class="relative py-36 bg-[#FBF9ED] overflow-x-hidden overflow-y-visible"
+  class="relative py-16 md:py-36 bg-[#FBF9ED] overflow-x-hidden overflow-y-visible"
 >
-  <div class="mx-auto max-w-6xl px-4 lg:px-0 relative z-10">
+
+  <div class="mx-auto max-w-6xl px-6 lg:px-0 relative z-10">
     <div
-      class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start mb-2"
+      class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start mb-8 md:mb-2"
     >
       <!-- LEFT: TITLE -->
       <div data-aos="fade-right" data-aos-offset="200">
         <h2
-          class="text-3xl md:text-4xl my-8 ms-8 font-semibold leading-tight text-gray-900"
+          class="text-3xl md:text-4xl mb-6 md:my-8 md:ms-8 font-semibold leading-tight text-gray-900"
         >
           ALANI, a Greek word of Turkish origin, refers to a free-spirited boy
           roaming the streets, much like a vagabond or rolling stone.
@@ -27,7 +28,7 @@
         <div
           class="hidden md:block absolute -left-8 top-0 h-full w-1 bg-[#BA3914]"
         ></div>
-        <div class="text-md leading-relaxed m-8 text-gray-700">
+        <div class="text-base leading-relaxed mt-0 md:m-8 text-gray-700">
           <p>
             This essence of movement and cultural exchange inspires the brand,
             which celebrates dough as a universal connector between traditions.
@@ -43,7 +44,7 @@
 
     <!-- BUTTONS -->
     <div
-      class="flex flex-wrap gap-4 justify-end"
+      class="flex flex-wrap gap-4 justify-start md:justify-end"
       data-aos="fade-up"
       data-aos-offset="200"
       data-aos-delay="250"
@@ -62,14 +63,15 @@
       </a>
     </div>
 
-    <br /><br /><br />
+    <!-- Spasi bawah dikurangi di mobile -->
+    <div class="h-12 md:h-24"></div> 
   </div>
 
   <!-- BLUE SHAPE (kiri bawah) -->
   <img
     src="{{ '/assets/images/blob-blue.svg' | relative_url }}"
     alt=""
-    class="pointer-events-none absolute -left-4 bottom-[140px] w-[220px] md:w-[260px] z-[1]"
+    class="pointer-events-none absolute -left-4 bottom-[100px] md:bottom-[140px] w-[180px] md:w-[260px] z-[1]"
     data-aos="zoom-in-up"
     data-aos-offset="200"
     data-aos-delay="200"
@@ -79,12 +81,13 @@
   <img
     src="{{ '/assets/images/blob-yellow.svg' | relative_url }}"
     alt=""
-    class="pointer-events-none absolute -right-2 top-8 w-[230px] md:w-[260px] z-1"
+    class="pointer-events-none absolute -right-2 top-8 w-[180px] md:w-[260px] z-1"
     data-aos="zoom-in-down"
     data-aos-offset="200"
     data-aos-delay="100"
   />
 </section>
+
 <!-- Wave Red Shape --> 
 <img
   src="{{ '/assets/images/red-shape-alani1.svg' | relative_url }}"

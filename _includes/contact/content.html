@@ -1,43 +1,61 @@
 <!-- CONTACT INTRO SECTION -->
 <section
-  class="py-16 md:py-20 bg-[#FBF9ED] overflow-hidden"
-  style="font-family: Montserrat;"
+  class="py-16 md:py-24 bg-[#FBF9ED] overflow-hidden"
+  style="font-family: 'Montserrat', sans-serif;"
 >
-  <div class="mx-auto max-w-6xl px-4 md:px-8 lg:px-0">
-    <div class="relative grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
-      <!-- Vertical Line (center divider on desktop) -->
+  <div class="mx-auto max-w-6xl px-6 lg:px-8">
+    <!-- 
+       GRID SETUP:
+       1. grid-cols-1 (mobile) -> md:grid-cols-2 (desktop).
+       2. gap-8 (mobile) -> md:gap-0 (desktop).
+          Di desktop gap dimatikan, kita atur jarak pakai padding agar pas dengan garis.
+    -->
+    <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0 items-center">
+      
+      <!-- Vertical Line (Center Divider) - Hanya di iPad/Desktop -->
       <div
         class="hidden md:block absolute left-1/2 top-0 bottom-0 -translate-x-1/2 border-l-[6px] border-[#7A4634]"
       ></div>
 
-      <!-- LEFT COLUMN -->
+      <!-- LEFT COLUMN: TITLE -->
+      <!-- 
+         ALIGNMENT:
+         1. md:text-right: Rata kanan mendekati garis di desktop.
+         2. md:pr-12 lg:pr-16: Jarak napas dari garis.
+      -->
       <div
-        class="md:pr-10"
+        class="text-left md:text-right md:pr-12 lg:pr-16"
         data-aos="fade-right"
         data-aos-offset="200"
       >
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-6 md:mb-8">
-          We’d love to hear<br />
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+          We’d love to hear<br class="hidden md:block" />
           from you!
         </h2>
       </div>
 
-      <!-- RIGHT COLUMN -->
+      <!-- RIGHT COLUMN: CONTENT -->
+      <!-- 
+         ALIGNMENT:
+         1. Hapus margin aneh-aneh (mt-4 dll).
+         2. md:pl-12 lg:pl-16: Jarak napas dari garis di sisi kanan.
+      -->
       <div
-        class="md:pl-10 mt-4 md:mt-0"
+        class="md:pl-12 lg:pl-16"
         data-aos="fade-left"
         data-aos-offset="200"
         data-aos-delay="150"
       >
-        <p class="text-base md:text-lg text-slate-700 leading-relaxed">
+        <p class="text-base sm:text-lg text-slate-700 leading-relaxed">
           Whether you’re craving pastries, planning dinner, or want to join the team,
           just use the form below — we’ll make sure your message reaches the right heroes.
         </p>
       </div>
     </div>
 
-    <!-- FORM WRAPPER (optional, for your form later) -->
-    <div class="mt-10 mx-auto max-w-4xl">
+    <!-- FORM WRAPPER -->
+    <!-- Saya beri margin top agar ada jarak antara intro text dan form nantinya -->
+    <div class="mt-12 md:mt-16 mx-auto max-w-4xl">
       <!-- form goes here -->
     </div>
   </div>

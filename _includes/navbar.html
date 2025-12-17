@@ -1,13 +1,16 @@
 <!-- TOP NAV -->
 <header class="fixed top-0 left-0 right-0 z-50 bg-[#FBF9ED] shadow-md">
   <div class="mx-auto px-4 sm:px-6 lg:px-10 xl:px-14 py-4 flex items-center justify-between">
-    {% if page.url contains 'alani' %}
-    <img src="{{ '/assets/images/alani.svg' | relative_url }}" alt="Alani" class="h-6 md:h-8" />
-  {% elsif page.url contains 'proud-potato-peeler' %}
-    <img src="{{ '/assets/images/logo-proud-potato.svg' | relative_url }}" alt="Proud Potato" class="h-6 md:h-8" />
-  {% else %}
-    <img src="{{ '/assets/images/logo-potato-heroes.svg' | relative_url }}" alt="Potato Heroes" class="h-6 md:h-8" />
-  {% endif %}
+    <a href="{{ '/' | relative_url }}">
+      {% if page.url contains 'alani' %}
+        <img src="{{ '/assets/images/alani.svg' | relative_url }}" alt="Alani" class="h-6 md:h-8" />
+      {% elsif page.url contains 'proud-potato-peeler' %}
+        <img src="{{ '/assets/images/logo-proud-potato.svg' | relative_url }}" alt="Proud Potato" class="h-6 md:h-8" />
+      {% else %}
+        <img src="{{ '/assets/images/logo-potato-heroes.svg' | relative_url }}" alt="Potato Heroes" class="h-6 md:h-8" />
+      {% endif %}
+    </a>
+    
   
 
     <button id="menu-toggle" class="flex flex-col gap-1.5">
@@ -31,18 +34,27 @@
         </div>
         
         <div class="space-y-4 mb-12 mt-16">
+          
           <!-- Alani -->
-          <button id="alani-toggle" class="w-full flex items-center justify-between text-gray-800 text-xl font-bold hover:text-[#b9846a]">
-            <span>Alani</span>
-            <svg
-              class="w-6 h-6 transform transition-transform"
-              id="alani-arrow"
-              fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
+          <!-- Wrapper utama diubah jadi DIV -->
+          <div class="w-full flex items-center justify-between text-gray-800 text-xl font-bold">
+            <!-- Teks sekarang menjadi Link -->
+            <a href="/alani.html" class="hover:text-[#b9846a] flex-grow">Alani</a>
+            
+            <!-- Tombol Toggle hanya membungkus SVG -->
+            <!-- ID 'alani-toggle' dipindahkan ke sini agar JS tetap jalan -->
+            <button id="alani-toggle" class="p-2 hover:text-[#b9846a]">
+              <svg
+                class="w-6 h-6 transform transition-transform"
+                id="alani-arrow"
+                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+          </div>
+          
           <div id="alani-dropdown" class="hidden pl-4 space-y-3">
-            <a href="/alani.html" class="block text-base text-gray-800 hover:text-[#b9846a]">About</a>
+            <a href="/alani.html#about" class="block text-base text-gray-800 hover:text-[#b9846a]">About</a>
             <a href="/alani.html#faqs" class="block text-base text-gray-800 hover:text-[#b9846a]">FAQs</a>
             <a href="/alani.html#gallery" class="block text-base text-gray-800 hover:text-[#b9846a]">Gallery</a>
             <a href="/alani.html#menu" class="block text-base text-gray-800 hover:text-[#b9846a]">Menu</a>
@@ -55,17 +67,21 @@
           </div>
           
           <!-- Proud Potato Peeler -->
-          <button id="potato-toggle" class="w-full flex items-center justify-between text-gray-800 text-xl font-bold hover:text-[#b9846a]">
-            <span>Proud Potato Peeler</span>
-            <svg
-              class="w-6 h-6 transform transition-transform"
-              id="potato-arrow"
-              fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
+          <div class="w-full flex items-center justify-between text-gray-800 text-xl font-bold">
+            <a href="/proud-potato-peeler.html" class="hover:text-[#b9846a] flex-grow">Proud Potato Peeler</a>
+            
+            <button id="potato-toggle" class="p-2 hover:text-[#b9846a]">
+              <svg
+                class="w-6 h-6 transform transition-transform"
+                id="potato-arrow"
+                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+          </div>
+
           <div id="potato-dropdown" class="hidden pl-4 space-y-3">
-            <a href="/proud-potato-peeler.html" class="block text-base text-gray-800 hover:text-[#b9846a]">About</a>
+            <a href="/proud-potato-peeler.html#about" class="block text-base text-gray-800 hover:text-[#b9846a]">About</a>
             <a href="/proud-potato-peeler.html#faqs" class="block text-base text-gray-800 hover:text-[#b9846a]">FAQs</a>
             <a href="/proud-potato-peeler.html#gallery" class="block text-base text-gray-800 hover:text-[#b9846a]">Gallery</a>
             <a href="/proud-potato-peeler.html#menu" class="block text-base text-gray-800 hover:text-[#b9846a]">Menu</a>
@@ -78,15 +94,19 @@
           </div>
           
           <!-- Proud Perfect Potions -->
-          <button id="potions-toggle" class="w-full flex items-center justify-between text-gray-800 text-xl font-bold hover:text-[#b9846a]">
-            <span>Proud Perfect Potions</span>
-            <svg
-              class="w-6 h-6 transform transition-transform"
-              id="potions-arrow"
-              fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
+          <div class="w-full flex items-center justify-between text-gray-800 text-xl font-bold">
+            <a href="/proud-perfect-potions.html" class="hover:text-[#b9846a] flex-grow">Proud Perfect Potions</a>
+            
+            <button id="potions-toggle" class="p-2 hover:text-[#b9846a]">
+              <svg
+                class="w-6 h-6 transform transition-transform"
+                id="potions-arrow"
+                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+          </div>
+
           <div id="potions-dropdown" class="hidden pl-4 space-y-3">
             <a href="/proud-perfect-potions.html" class="block text-base text-gray-800 hover:text-[#b9846a]">Coming Soon</a>
           </div>

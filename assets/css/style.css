@@ -355,24 +355,19 @@ body.is-loaded #hero-screen {
 
   .brand-panel {
     min-height: 70vh;
-    /* TAMBAHKAN INI: Agar panel menjadi flex container */
     display: flex; 
     flex-direction: column;
   }
   
-  /* Update class ini */
   .brand-panel__content {
     padding: 1.5rem 1.5rem 2.25rem;
-    /* TAMBAHKAN INI: Agar konten mengisi tinggi penuh panel */
     flex: 1; 
     width: 100%;
-    /* Pastikan justify-content tetap space-between atau flex-end */
     justify-content: space-between; 
   }
 
   .brand-panel__title-block {
     max-width: 12rem;
-    /* Pastikan margin-top auto tetap ada agar dia terdorong ke paling bawah */
     margin-top: auto; 
   }
 }
